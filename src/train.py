@@ -5,8 +5,16 @@ import yaml
 import json
 import joblib
 import os
+import tempfile
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, f1_score
+
+# Cho phep override bang bien moi truong, hoac dung thu muc tam tren Linux/Windows
+_tracking_uri = os.environ.get("MLFLOW_TRACKING_URI")
+if not _tracking_uri:
+    _tmp_dir = tempfile.mkdtemp(prefix="mlruns_")
+    _tracking_uri = f"file:{_tmp_dir}"
+mlflow.set_tracking_uri(_tracking_uri)
 
 # Nguong chat luong cua lab nay la f1_score, KHONG phai accuracy.
 # Ly do: bo du lieu Adult co ty le lop 75/25. Mot mo hinh doan bua
