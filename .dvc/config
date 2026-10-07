@@ -1,0 +1,5 @@
+[core]
+    remote = s3-remote
+['remote "s3-remote"']
+    url = s3://mlops-k4-tuan-tung-aws/dvc
+    region = ap-southeast-1

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hi/OneDrive/Documents/GitHub/K4-L3-DAY21-NgoTuanTung-2A202602826-CI-CD-for-AI-Systems/mlruns/0/759424ba33e24cd7af874d4ded8537ca/artifacts
+end_time: 1791347686521
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 759424ba33e24cd7af874d4ded8537ca
+run_name: trusting-doe-834
+run_uuid: 759424ba33e24cd7af874d4ded8537ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791347670032
+status: 3
+tags: []
+user_id: Hi
